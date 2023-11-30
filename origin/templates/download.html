@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件下载</title>
+</head>
+<body>
+    <h2>文件已下载</h2>
+    <p>您可以点击以下链接下载文件：</p>
+    <a href="{{ url_for('get_file', file_name=file_name) }}">下载文件</a>
+</body>
+</html>

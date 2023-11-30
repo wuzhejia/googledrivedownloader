@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive Downloader</title>
+</head>
+<body>
+    <h1>Google Drive Downloader</h1>
+    <form method="post" action="/download">
+        <label for="drive_link">Google Drive 共享链接：</label>
+        <input type="text" id="drive_link" name="drive_link" required>
+        
+        <!-- 新增：用于输入文件名的字段 -->
+        <label for="file_name">文件名：</label>
+        <input type="text" id="file_name" name="file_name" required>
+        
+        <button type="submit">下载文件</button>
+    </form>
+</body>
+</html>
